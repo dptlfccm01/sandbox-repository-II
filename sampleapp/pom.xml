@@ -3,7 +3,7 @@
 	<groupId>com.app.sample</groupId>
 	<artifactId>sampleapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>sampleapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>

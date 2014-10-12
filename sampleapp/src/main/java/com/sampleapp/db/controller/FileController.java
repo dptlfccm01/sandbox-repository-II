@@ -6,8 +6,11 @@ import java.util.List;
 
 public class FileController {
 
-	List<String> records = new ArrayList<String>();
+	List<String> records;
 	
+	{
+		records = new ArrayList<String>();
+	}
 	public FileController(){}
 	
 	public void readFile(){

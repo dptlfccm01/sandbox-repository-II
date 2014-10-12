@@ -3,3 +3,6 @@ id, firstname, lastname, email, paymenttype
 2, Martin, Salos, martin@has.com, card
 3, Sally, Raymond, sally@has.co, card
 6, bruce, grove, bruce@gmail.com, card
+6, bruce, grove, bruce@gmail.com, card
+6, bruce, grove, bruce@gmail.com, card
+6, bruce, grove, bruce@gmail.com, card

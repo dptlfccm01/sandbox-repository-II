@@ -1,3 +1,4 @@
 id, firstname, lastname, email, lastpaymentdate, paymenttype
 1, Suzie, Baloozie, suzie@has.com, 12/01/2014, card
 2, Martin, Salos, martin@has.com, 14/01/2014, card
+3, Sally, Raymond, sally@has.co, 15/01/2014, card

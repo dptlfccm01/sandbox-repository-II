@@ -16,7 +16,7 @@ public class FileController {
 	public void readFile(){
 		
 		try{
-			BufferedReader reader = new BufferedReader(new FileReader("src/resources/db.txt"));
+			BufferedReader reader = new BufferedReader(new FileReader("C:\\users\\Raheal\\Desktop\\db.txt"));
 			String line;
 			int iteration = 0;
 			while((line = reader.readLine()) != null){
@@ -39,7 +39,7 @@ public class FileController {
 	public void writeToFile(String entry){
 		
 		try{
-			BufferedWriter writer = new BufferedWriter(new FileWriter("src/resources/db.txt", true));
+			BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\users\\Raheal\\Desktop\\db.txt", true));
 			writer.write(entry);
 			writer.newLine();
 			writer.close();

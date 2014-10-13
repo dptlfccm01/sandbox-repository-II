@@ -7,3 +7,4 @@ id, firstname, lastname, email, paymenttype, password
 6, bruce, grove, bruce@gmail.com, card, abcd1234
 6, bruce, grove, bruce@gmail.com, card, abcd1234
 6, bruce, grove, bruce@gmail.com, card, abcd1234
+6, bruce, grove, bruce@gmail.com, card, abcd1234

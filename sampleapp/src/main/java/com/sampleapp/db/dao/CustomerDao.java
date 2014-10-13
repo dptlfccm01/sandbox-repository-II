@@ -40,6 +40,22 @@ public class CustomerDao {
 		return customer;
 	}
 	
+	public Customer getCustomerByEmail(String email){
+		Customer customer = null;
+		FileController fc = new FileController();
+		fc.readFile();
+		List<String> recordList = fc.getRecords();
+		for (Iterator<String> it = recordList.iterator(); it.hasNext();){
+			String[] recordFields = it.next().split(", ");
+			if(recordFields[3].equals(email)){
+				customer = new Customer(Integer.parseInt(recordFields[0]), recordFields[1], recordFields[2], recordFields[3], recordFields[4], recordFields[5]);
+				return customer;	
+			}
+			
+		}
+		return customer;		
+	}
+	
 	public void addCustomer(Customer customer){
 		FileController fc = new FileController();
 		fc.writeToFile(customer.toString());

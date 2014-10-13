@@ -18,7 +18,7 @@ public class CustomerDao {
 		List<String> recordList = fc.getRecords();
 		for (Iterator<String> it = recordList.iterator(); it.hasNext();){
 			String[] recordFields = it.next().split(", ");
-			Customer customer = new Customer(Integer.parseInt(recordFields[0]), recordFields[1], recordFields[2], recordFields[3], recordFields[4]);
+			Customer customer = new Customer(Integer.parseInt(recordFields[0]), recordFields[1], recordFields[2], recordFields[3], recordFields[4], recordFields[5]);
 			customerList.add(customer);
 		}
 		return customerList;
@@ -32,7 +32,7 @@ public class CustomerDao {
 		for (Iterator<String> it = recordList.iterator(); it.hasNext();){
 			String[] recordFields = it.next().split(", ");
 			if(Integer.parseInt(recordFields[0]) == id){
-				customer = new Customer(Integer.parseInt(recordFields[0]), recordFields[1], recordFields[2], recordFields[3], recordFields[4]);
+				customer = new Customer(Integer.parseInt(recordFields[0]), recordFields[1], recordFields[2], recordFields[3], recordFields[4], recordFields[5]);
 				return customer;	
 			}
 			

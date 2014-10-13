@@ -7,15 +7,17 @@ public class Customer {
 	private String lastname;
 	private String email;
 	private String cardType;
+	private String password;
 	
 	public Customer(){}
 	
-	public Customer(int id, String firstname, String lastname, String email, String cardType){
+	public Customer(int id, String firstname, String lastname, String email, String cardType, String password){
 		this.id = id;
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.email = email;
 		this.cardType = cardType;
+		this.password = password;
 	}
 	
 	public int getId() {
@@ -49,9 +51,17 @@ public class Customer {
 		this.cardType = cardType;
 	}
 	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	@Override
 	public String toString(){
-		return getId()+", "+getFirstname()+", "+getLastname()+", "+getEmail()+", "+getCardType();
+		return getId()+", "+getFirstname()+", "+getLastname()+", "+getEmail()+", "+getCardType()+", "+getPassword();
 	}
 	
 }

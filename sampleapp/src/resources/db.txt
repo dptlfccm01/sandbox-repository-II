@@ -1,8 +1,9 @@
-id, firstname, lastname, email, paymenttype
-1, Suzie, Baloozie, suzie@has.com, card
-2, Martin, Salos, martin@has.com, card
-3, Sally, Raymond, sally@has.co, card
+id, firstname, lastname, email, paymenttype, password
+1, Suzie, Baloozie, suzie@has.com, card, abcd1234
+2, Martin, Salos, martin@has.com, card, abcd1234
+3, Sally, Raymond, sally@has.co, card, abcd1234
 6, bruce, grove, bruce@gmail.com, card
-6, bruce, grove, bruce@gmail.com, card
-6, bruce, grove, bruce@gmail.com, card
-6, bruce, grove, bruce@gmail.com, card
+6, bruce, grove, bruce@gmail.com, card, abcd1234
+6, bruce, grove, bruce@gmail.com, card, abcd1234
+6, bruce, grove, bruce@gmail.com, card, abcd1234
+6, bruce, grove, bruce@gmail.com, card, abcd1234

@@ -1,5 +1,7 @@
 package com.sampleapp.app.web.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +19,10 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/welcome.html", method=RequestMethod.POST)
-	public ModelAndView loginSuccess(@ModelAttribute("login") Login login){
+	public ModelAndView loginSuccess(@ModelAttribute("login") Login login, HttpSession session){
 		System.out.println("OUT> email address: "+login.getEmail());
 		if(login.getEmail().equals("admin@admin.com") && login.getPassword().equals("admin")){
+			session.setAttribute("idValue", new String("IDVALUE"));
 			return new ModelAndView("Welcome");
 		}
 		else{

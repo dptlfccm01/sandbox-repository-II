@@ -5,11 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome</title>
+<title>View Account Details</title>
 </head>
 <body>
-Welcome <c:out value="${login.email}" />
+Account details page
 <br />
-<a href="/sampleapp-web/viewAccountDetails.html">View Account details</a>
 </body>
 </html>

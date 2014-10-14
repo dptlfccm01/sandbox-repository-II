@@ -59,5 +59,9 @@ public class FileController {
 		this.records = records;
 	}
 	
+	public int getRecordSize(){
+		return records.size();
+	}
+	
 	
 }

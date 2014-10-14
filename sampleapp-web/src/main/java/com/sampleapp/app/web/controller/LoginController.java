@@ -27,8 +27,11 @@ public class LoginController {
 		Customer customer = new CustomerDao().getCustomerByEmail(login.getEmail());
 		
 		if(customer != null){
-			session.setAttribute("idValue", new String("IDVALUE"));
-			return new ModelAndView("Welcome");
+			session.setAttribute("customerObject", customer);
+			ModelAndView model = new ModelAndView("Welcome");
+			model.addObject("firstname", customer.getFirstname());
+			model.addObject("lastname", customer.getLastname());
+			return model;
 		}
 		
 		else{

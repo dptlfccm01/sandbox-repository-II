@@ -61,5 +61,10 @@ public class CustomerDao {
 		fc.writeToFile(customer.toString());
 	}
 	
+	public int getNumberOfCustomers(){
+		FileController fc = new FileController();
+		fc.readFile();
+		return fc.getRecordSize();
+	}
 	
 }

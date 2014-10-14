@@ -8,8 +8,12 @@
 <title>Welcome</title>
 </head>
 <body>
-Welcome <c:out value="${login.email}" />
+Welcome <c:out value="${firstname}" /> <c:out value="${lastname }"/>
 <br />
 <a href="/sampleapp-web/viewAccountDetails.html">View Account details</a>
+<br />
+<a href="/sampleapp-web/viewAllAccounts.html">View All Accounts</a>
+<br />
+<a href="/sampleapp-web/createNewAccount.html">Create new account</a>
 </body>
 </html>

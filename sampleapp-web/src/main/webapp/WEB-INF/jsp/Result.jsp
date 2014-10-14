@@ -5,13 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>View Account Details</title>
+<title>Result</title>
 </head>
 <body>
-Account details page
-<br />
-<p>First name: <c:out value="${customer.firstname}"/></p>
-<p>Last name: <c:out value="${customer.lastname}"/></p>
-<p>Email: <c:out value="${customer.email}"/></p>
+Result page 
 </body>
 </html>

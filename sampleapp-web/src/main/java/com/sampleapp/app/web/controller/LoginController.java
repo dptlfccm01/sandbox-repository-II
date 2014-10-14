@@ -27,11 +27,16 @@ public class LoginController {
 		Customer customer = new CustomerDao().getCustomerByEmail(login.getEmail());
 		
 		if(customer != null){
-			session.setAttribute("customerObject", customer);
-			ModelAndView model = new ModelAndView("Welcome");
-			model.addObject("firstname", customer.getFirstname());
-			model.addObject("lastname", customer.getLastname());
-			return model;
+			if(login.getEmail().equals(customer.getEmail()) && login.getPassword().equals(customer.getPassword())){
+				session.setAttribute("customerObject", customer);
+				ModelAndView model = new ModelAndView("Welcome");
+				model.addObject("firstname", customer.getFirstname());
+				model.addObject("lastname", customer.getLastname());
+				return model;
+			}
+			else{
+				return new ModelAndView("LoginForm");//views the same form again if the username/ password is not recognised
+			}
 		}
 		
 		else{

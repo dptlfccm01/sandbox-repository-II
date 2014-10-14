@@ -1,7 +1,9 @@
 package com.sampleapp.app.web.model;
 
-public class Login {
+import javax.validation.constraints.NotNull;
 
+public class Login {
+	
 	private String email;
 	private String password;
 	
